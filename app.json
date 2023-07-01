@@ -1,1 +1,693 @@
-{"_comment":"This file is generated. Please edit .homeycompose/app.json instead.","id":"club.look-in","version":"1.0.4","compatibility":">=5.0.0","sdk":3,"platforms":["local"],"name":{"en":"LOOKin"},"description":{"en":"Make your IR devices smart"},"category":["tools"],"brandColor":"#63BD5C","images":{"small":"/assets/images/small.png","large":"/assets/images/large.png","xlarge":"/assets/images/xlarge.png"},"author":{"name":"Alex Tuzov"},"homepage":"https://look-in.club","support":"mailto:aresnexus@rambler.ru","drivers":[{"name":{"en":"Air Conditioner"},"class":"other","capabilities":["onoff","ac_mode","target_temperature.ac","measure_temperature.ac","ac_fan_mode","ac_shutters_mode"],"capabilitiesOptions":{"target_temperature.ac":{"min":16,"max":32,"step":1}},"platforms":["local"],"connectivity":["lan"],"images":{"small":"drivers/air-conditioner/assets/images/small.png","large":"drivers/air-conditioner/assets/images/large.png","xlarge":"drivers/air-conditioner/assets/images/xlarge.png"},"pair":[{"id":"list_devices","template":"list_devices","navigation":{"next":"add_devices"}},{"id":"add_devices","template":"add_devices"}],"id":"air-conditioner"},{"name":{"en":"Air Humidifier"},"class":"other","capabilities":["onoff"],"platforms":["local"],"connectivity":["lan"],"images":{"small":"drivers/air-humidifier/assets/images/small.png","large":"drivers/air-humidifier/assets/images/large.png","xlarge":"drivers/air-humidifier/assets/images/xlarge.png"},"pair":[{"id":"list_devices","template":"list_devices","navigation":{"next":"add_devices"}},{"id":"add_devices","template":"add_devices"}],"id":"air-humidifier"},{"name":{"en":"Air-purifier"},"class":"other","capabilities":["onoff"],"platforms":["local"],"connectivity":["lan"],"images":{"small":"drivers/air-purifier/assets/images/small.png","large":"drivers/air-purifier/assets/images/large.png","xlarge":"drivers/air-purifier/assets/images/xlarge.png"},"pair":[{"id":"list_devices","template":"list_devices","navigation":{"next":"add_devices"}},{"id":"add_devices","template":"add_devices"}],"id":"air-purifier"},{"name":{"en":"Fan"},"class":"fan","capabilities":["onoff"],"platforms":["local"],"connectivity":["lan"],"images":{"small":"drivers/fan/assets/images/small.png","large":"drivers/fan/assets/images/large.png","xlarge":"drivers/fan/assets/images/xlarge.png"},"pair":[{"id":"list_devices","template":"list_devices","navigation":{"next":"add_devices"}},{"id":"add_devices","template":"add_devices"}],"id":"fan"},{"name":{"en":"Light"},"class":"light","capabilities":["onoff"],"platforms":["local"],"connectivity":["lan"],"images":{"small":"drivers/light/assets/images/small.png","large":"drivers/light/assets/images/large.png","xlarge":"drivers/light/assets/images/xlarge.png"},"pair":[{"id":"list_devices","template":"list_devices","navigation":{"next":"add_devices"}},{"id":"add_devices","template":"add_devices"}],"id":"light"},{"name":{"en":"Media"},"class":"speaker","capabilities":["onoff","volume_up","volume_down","volume_mute"],"capabilitiesOptions":{"button":{"type":"number","getable":false,"title":"Mode"}},"platforms":["local"],"connectivity":["lan"],"images":{"small":"drivers/media/assets/images/small.png","large":"drivers/media/assets/images/large.png","xlarge":"drivers/media/assets/images/xlarge.png"},"pair":[{"id":"list_devices","template":"list_devices","navigation":{"next":"add_devices"}},{"id":"add_devices","template":"add_devices"}],"id":"media"},{"name":{"en":"Meteo Sensors"},"class":"sensor","capabilities":["measure_humidity","measure_temperature"],"platforms":["local"],"connectivity":["lan"],"images":{"small":"drivers/meteo-sensors/assets/images/small.png","large":"drivers/meteo-sensors/assets/images/large.png","xlarge":"drivers/meteo-sensors/assets/images/xlarge.png"},"pair":[{"id":"list_devices","template":"list_devices","navigation":{"next":"add_devices"}},{"id":"add_devices","template":"add_devices"}],"id":"meteo-sensors"},{"name":{"en":"Switch"},"class":"button","capabilities":["onoff"],"platforms":["local"],"connectivity":["lan"],"images":{"small":"drivers/switch/assets/images/small.png","large":"drivers/switch/assets/images/large.png","xlarge":"drivers/switch/assets/images/xlarge.png"},"pair":[{"id":"list_devices","template":"list_devices","navigation":{"next":"add_devices"}},{"id":"add_devices","template":"add_devices"}],"id":"switch"},{"name":{"en":"TV"},"class":"tv","capabilities":["onoff","channel_up","volume_up","channel_down","volume_down","volume_mute","arrow_up_btn","select_btn","arrow_down_btn","arrow_left_btn","arrow_right_btn","menu_btn"],"platforms":["local"],"connectivity":["lan"],"images":{"small":"drivers/tv/assets/images/small.png","large":"drivers/tv/assets/images/large.png","xlarge":"drivers/tv/assets/images/xlarge.png"},"pair":[{"id":"list_devices","template":"list_devices","navigation":{"next":"add_devices"}},{"id":"add_devices","template":"add_devices"}],"id":"tv"}],"capabilities":{"ac_fan_mode":{"title":{"en":"ac_fan_mode"},"type":"enum","uiComponent":"picker","getable":false,"setable":true,"values":[{"id":"0","title":{"en":"auto"}},{"id":"1","title":{"en":"low"}},{"id":"2","title":{"en":"mid"}},{"id":"3","title":{"en":"high"}}]},"ac_mode":{"title":{"en":"ac_mode"},"type":"enum","uiComponent":"picker","getable":false,"setable":true,"values":[{"id":"0","title":{"en":"off"}},{"id":"1","title":{"en":"auto"}},{"id":"2","title":{"en":"cool"}},{"id":"3","title":{"en":"heat"}},{"id":"4","title":{"en":"dry"}},{"id":"5","title":{"en":"fan_only"}}]},"ac_shutters_mode":{"title":{"en":"ac_shutters_mode"},"type":"enum","uiComponent":"picker","getable":false,"setable":true,"values":[{"id":"0","title":{"en":"stop"}},{"id":"1","title":{"en":"move"}}]},"arrow_down_btn":{"title":{"en":"Down"},"type":"boolean","uiComponent":"button","getable":false,"setable":true,"icon":"assets/icons/arrow_down.svg"},"arrow_left_btn":{"title":{"en":"Left"},"type":"boolean","uiComponent":"button","getable":false,"setable":true,"icon":"assets/icons/arrow_left.svg"},"arrow_right_btn":{"title":{"en":"Right"},"type":"boolean","uiComponent":"button","getable":false,"setable":true,"icon":"assets/icons/arrow_right.svg"},"arrow_up_btn":{"title":{"en":"Up"},"type":"boolean","uiComponent":"button","getable":false,"setable":true,"icon":"assets/icons/arrow_up.svg"},"menu_btn":{"title":{"en":"Menu"},"type":"boolean","uiComponent":"button","getable":false,"setable":true,"icon":"assets/icons/menu.svg"},"mode_2_picker":{"title":{"en":"Mode"},"type":"enum","uiComponent":"picker","getable":false,"setable":true,"values":[{"id":"0","title":{"en":"Mode 1"}},{"id":"1","title":{"en":"Mode 2"}}]},"mode_3_picker":{"title":{"en":"Mode"},"type":"enum","uiComponent":"picker","getable":false,"setable":true,"values":[{"id":"0","title":{"en":"Mode 1"}},{"id":"1","title":{"en":"Mode 2"}},{"id":"2","title":{"en":"Mode 3"}}]},"mode_4_picker":{"title":{"en":"Mode"},"type":"enum","uiComponent":"picker","getable":false,"setable":true,"values":[{"id":"0","title":{"en":"Mode 1"}},{"id":"1","title":{"en":"Mode 2"}},{"id":"2","title":{"en":"Mode 3"}},{"id":"3","title":{"en":"Mode 4"}}]},"mode_btn":{"title":{"en":"Mode"},"type":"boolean","uiComponent":"button","getable":false,"setable":true,"icon":"assets/icons/mode.svg"},"select_btn":{"title":{"en":"Select"},"type":"boolean","uiComponent":"button","getable":false,"setable":true},"speed_btn":{"title":{"en":"Speed"},"type":"boolean","uiComponent":"button","getable":false,"setable":true},"speed_down_btn":{"title":{"en":"Speed Down"},"type":"boolean","uiComponent":"button","getable":false,"setable":true,"icon":"assets/icons/arrow_down.svg"},"speed_up_btn":{"title":{"en":"Speed Up"},"type":"boolean","uiComponent":"button","getable":false,"setable":true,"icon":"assets/icons/arrow_up.svg"},"swing_btn":{"title":{"en":"Swing"},"type":"boolean","uiComponent":"button","getable":false,"setable":true},"swing_mode1_btn":{"title":{"en":"Swing Mode 1"},"type":"boolean","uiComponent":"button","getable":false,"setable":true,"icon":"assets/icons/mode.svg"},"swing_mode2_btn":{"title":{"en":"Swing Mode 2"},"type":"boolean","uiComponent":"button","getable":false,"setable":true,"icon":"assets/icons/mode.svg"}}}
+{
+  "_comment": "This file is generated. Please edit .homeycompose/app.json instead.",
+  "id": "club.look-in",
+  "version": "1.0.4",
+  "compatibility": ">=5.0.0",
+  "sdk": 3,
+  "platforms": [
+    "local"
+  ],
+  "name": {
+    "en": "LOOKin"
+  },
+  "description": {
+    "en": "Make your IR devices smart"
+  },
+  "category": [
+    "tools"
+  ],
+  "brandColor": "#63BD5C",
+  "images": {
+    "small": "/assets/images/small.png",
+    "large": "/assets/images/large.png",
+    "xlarge": "/assets/images/xlarge.png"
+  },
+  "author": {
+    "name": "Alex Tuzov"
+  },
+  "homepage": "https://look-in.club",
+  "support": "mailto:aresnexus@rambler.ru",
+  "drivers": [
+    {
+      "name": {
+        "en": "Air Conditioner"
+      },
+      "class": "other",
+      "capabilities": [
+        "onoff",
+        "ac_mode",
+        "target_temperature.ac",
+        "measure_temperature.ac",
+        "ac_fan_mode",
+        "ac_shutters_mode"
+      ],
+      "capabilitiesOptions": {
+        "target_temperature.ac": {
+          "min": 16,
+          "max": 32,
+          "step": 1
+        }
+      },
+      "platforms": [
+        "local"
+      ],
+      "connectivity": [
+        "lan"
+      ],
+      "images": {
+        "small": "drivers/air-conditioner/assets/images/small.png",
+        "large": "drivers/air-conditioner/assets/images/large.png",
+        "xlarge": "drivers/air-conditioner/assets/images/xlarge.png"
+      },
+      "pair": [
+        {
+          "id": "list_devices",
+          "template": "list_devices",
+          "navigation": {
+            "next": "add_devices"
+          }
+        },
+        {
+          "id": "add_devices",
+          "template": "add_devices"
+        }
+      ],
+      "id": "air-conditioner"
+    },
+    {
+      "name": {
+        "en": "Air Humidifier"
+      },
+      "class": "other",
+      "capabilities": [
+        "onoff"
+      ],
+      "platforms": [
+        "local"
+      ],
+      "connectivity": [
+        "lan"
+      ],
+      "images": {
+        "small": "drivers/air-humidifier/assets/images/small.png",
+        "large": "drivers/air-humidifier/assets/images/large.png",
+        "xlarge": "drivers/air-humidifier/assets/images/xlarge.png"
+      },
+      "pair": [
+        {
+          "id": "list_devices",
+          "template": "list_devices",
+          "navigation": {
+            "next": "add_devices"
+          }
+        },
+        {
+          "id": "add_devices",
+          "template": "add_devices"
+        }
+      ],
+      "id": "air-humidifier"
+    },
+    {
+      "name": {
+        "en": "Air-purifier"
+      },
+      "class": "other",
+      "capabilities": [
+        "onoff"
+      ],
+      "platforms": [
+        "local"
+      ],
+      "connectivity": [
+        "lan"
+      ],
+      "images": {
+        "small": "drivers/air-purifier/assets/images/small.png",
+        "large": "drivers/air-purifier/assets/images/large.png",
+        "xlarge": "drivers/air-purifier/assets/images/xlarge.png"
+      },
+      "pair": [
+        {
+          "id": "list_devices",
+          "template": "list_devices",
+          "navigation": {
+            "next": "add_devices"
+          }
+        },
+        {
+          "id": "add_devices",
+          "template": "add_devices"
+        }
+      ],
+      "id": "air-purifier"
+    },
+    {
+      "name": {
+        "en": "Fan"
+      },
+      "class": "fan",
+      "capabilities": [
+        "onoff"
+      ],
+      "platforms": [
+        "local"
+      ],
+      "connectivity": [
+        "lan"
+      ],
+      "images": {
+        "small": "drivers/fan/assets/images/small.png",
+        "large": "drivers/fan/assets/images/large.png",
+        "xlarge": "drivers/fan/assets/images/xlarge.png"
+      },
+      "pair": [
+        {
+          "id": "list_devices",
+          "template": "list_devices",
+          "navigation": {
+            "next": "add_devices"
+          }
+        },
+        {
+          "id": "add_devices",
+          "template": "add_devices"
+        }
+      ],
+      "id": "fan"
+    },
+    {
+      "name": {
+        "en": "Light"
+      },
+      "class": "light",
+      "capabilities": [
+        "onoff"
+      ],
+      "platforms": [
+        "local"
+      ],
+      "connectivity": [
+        "lan"
+      ],
+      "images": {
+        "small": "drivers/light/assets/images/small.png",
+        "large": "drivers/light/assets/images/large.png",
+        "xlarge": "drivers/light/assets/images/xlarge.png"
+      },
+      "pair": [
+        {
+          "id": "list_devices",
+          "template": "list_devices",
+          "navigation": {
+            "next": "add_devices"
+          }
+        },
+        {
+          "id": "add_devices",
+          "template": "add_devices"
+        }
+      ],
+      "id": "light"
+    },
+    {
+      "name": {
+        "en": "Media"
+      },
+      "class": "speaker",
+      "capabilities": [
+        "onoff",
+        "volume_up",
+        "volume_down",
+        "volume_mute"
+      ],
+      "capabilitiesOptions": {
+        "button": {
+          "type": "number",
+          "getable": false,
+          "title": "Mode"
+        }
+      },
+      "platforms": [
+        "local"
+      ],
+      "connectivity": [
+        "lan"
+      ],
+      "images": {
+        "small": "drivers/media/assets/images/small.png",
+        "large": "drivers/media/assets/images/large.png",
+        "xlarge": "drivers/media/assets/images/xlarge.png"
+      },
+      "pair": [
+        {
+          "id": "list_devices",
+          "template": "list_devices",
+          "navigation": {
+            "next": "add_devices"
+          }
+        },
+        {
+          "id": "add_devices",
+          "template": "add_devices"
+        }
+      ],
+      "id": "media"
+    },
+    {
+      "name": {
+        "en": "Meteo Sensors"
+      },
+      "class": "sensor",
+      "capabilities": [
+        "measure_humidity",
+        "measure_temperature"
+      ],
+      "platforms": [
+        "local"
+      ],
+      "connectivity": [
+        "lan"
+      ],
+      "images": {
+        "small": "drivers/meteo-sensors/assets/images/small.png",
+        "large": "drivers/meteo-sensors/assets/images/large.png",
+        "xlarge": "drivers/meteo-sensors/assets/images/xlarge.png"
+      },
+      "pair": [
+        {
+          "id": "list_devices",
+          "template": "list_devices",
+          "navigation": {
+            "next": "add_devices"
+          }
+        },
+        {
+          "id": "add_devices",
+          "template": "add_devices"
+        }
+      ],
+      "id": "meteo-sensors"
+    },
+    {
+      "name": {
+        "en": "Switch"
+      },
+      "class": "button",
+      "capabilities": [
+        "onoff"
+      ],
+      "platforms": [
+        "local"
+      ],
+      "connectivity": [
+        "lan"
+      ],
+      "images": {
+        "small": "drivers/switch/assets/images/small.png",
+        "large": "drivers/switch/assets/images/large.png",
+        "xlarge": "drivers/switch/assets/images/xlarge.png"
+      },
+      "pair": [
+        {
+          "id": "list_devices",
+          "template": "list_devices",
+          "navigation": {
+            "next": "add_devices"
+          }
+        },
+        {
+          "id": "add_devices",
+          "template": "add_devices"
+        }
+      ],
+      "id": "switch"
+    },
+    {
+      "name": {
+        "en": "TV"
+      },
+      "class": "tv",
+      "capabilities": [
+        "onoff",
+        "channel_up",
+        "volume_up",
+        "channel_down",
+        "volume_down",
+        "volume_mute",
+        "arrow_up_btn",
+        "select_btn",
+        "arrow_down_btn",
+        "arrow_left_btn",
+        "arrow_right_btn",
+        "menu_btn"
+      ],
+      "platforms": [
+        "local"
+      ],
+      "connectivity": [
+        "lan"
+      ],
+      "images": {
+        "small": "drivers/tv/assets/images/small.png",
+        "large": "drivers/tv/assets/images/large.png",
+        "xlarge": "drivers/tv/assets/images/xlarge.png"
+      },
+      "pair": [
+        {
+          "id": "list_devices",
+          "template": "list_devices",
+          "navigation": {
+            "next": "add_devices"
+          }
+        },
+        {
+          "id": "add_devices",
+          "template": "add_devices"
+        }
+      ],
+      "id": "tv"
+    }
+  ],
+  "capabilities": {
+    "ac_fan_mode": {
+      "title": {
+        "en": "ac_fan_mode"
+      },
+      "type": "enum",
+      "uiComponent": "picker",
+      "getable": false,
+      "setable": true,
+      "values": [
+        {
+          "id": "0",
+          "title": {
+            "en": "auto"
+          }
+        },
+        {
+          "id": "1",
+          "title": {
+            "en": "low"
+          }
+        },
+        {
+          "id": "2",
+          "title": {
+            "en": "mid"
+          }
+        },
+        {
+          "id": "3",
+          "title": {
+            "en": "high"
+          }
+        }
+      ]
+    },
+    "ac_mode": {
+      "title": {
+        "en": "ac_mode"
+      },
+      "type": "enum",
+      "uiComponent": "picker",
+      "getable": false,
+      "setable": true,
+      "values": [
+        {
+          "id": "0",
+          "title": {
+            "en": "off"
+          }
+        },
+        {
+          "id": "1",
+          "title": {
+            "en": "auto"
+          }
+        },
+        {
+          "id": "2",
+          "title": {
+            "en": "cool"
+          }
+        },
+        {
+          "id": "3",
+          "title": {
+            "en": "heat"
+          }
+        },
+        {
+          "id": "4",
+          "title": {
+            "en": "dry"
+          }
+        },
+        {
+          "id": "5",
+          "title": {
+            "en": "fan_only"
+          }
+        }
+      ]
+    },
+    "ac_shutters_mode": {
+      "title": {
+        "en": "ac_shutters_mode"
+      },
+      "type": "enum",
+      "uiComponent": "picker",
+      "getable": false,
+      "setable": true,
+      "values": [
+        {
+          "id": "0",
+          "title": {
+            "en": "stop"
+          }
+        },
+        {
+          "id": "1",
+          "title": {
+            "en": "move"
+          }
+        }
+      ]
+    },
+    "arrow_down_btn": {
+      "title": {
+        "en": "Down"
+      },
+      "type": "boolean",
+      "uiComponent": "button",
+      "getable": false,
+      "setable": true,
+      "icon": "assets/icons/arrow_down.svg"
+    },
+    "arrow_left_btn": {
+      "title": {
+        "en": "Left"
+      },
+      "type": "boolean",
+      "uiComponent": "button",
+      "getable": false,
+      "setable": true,
+      "icon": "assets/icons/arrow_left.svg"
+    },
+    "arrow_right_btn": {
+      "title": {
+        "en": "Right"
+      },
+      "type": "boolean",
+      "uiComponent": "button",
+      "getable": false,
+      "setable": true,
+      "icon": "assets/icons/arrow_right.svg"
+    },
+    "arrow_up_btn": {
+      "title": {
+        "en": "Up"
+      },
+      "type": "boolean",
+      "uiComponent": "button",
+      "getable": false,
+      "setable": true,
+      "icon": "assets/icons/arrow_up.svg"
+    },
+    "menu_btn": {
+      "title": {
+        "en": "Menu"
+      },
+      "type": "boolean",
+      "uiComponent": "button",
+      "getable": false,
+      "setable": true,
+      "icon": "assets/icons/menu.svg"
+    },
+    "mode_2_picker": {
+      "title": {
+        "en": "Mode"
+      },
+      "type": "enum",
+      "uiComponent": "picker",
+      "getable": false,
+      "setable": true,
+      "values": [
+        {
+          "id": "0",
+          "title": {
+            "en": "Mode 1"
+          }
+        },
+        {
+          "id": "1",
+          "title": {
+            "en": "Mode 2"
+          }
+        }
+      ]
+    },
+    "mode_3_picker": {
+      "title": {
+        "en": "Mode"
+      },
+      "type": "enum",
+      "uiComponent": "picker",
+      "getable": false,
+      "setable": true,
+      "values": [
+        {
+          "id": "0",
+          "title": {
+            "en": "Mode 1"
+          }
+        },
+        {
+          "id": "1",
+          "title": {
+            "en": "Mode 2"
+          }
+        },
+        {
+          "id": "2",
+          "title": {
+            "en": "Mode 3"
+          }
+        }
+      ]
+    },
+    "mode_4_picker": {
+      "title": {
+        "en": "Mode"
+      },
+      "type": "enum",
+      "uiComponent": "picker",
+      "getable": false,
+      "setable": true,
+      "values": [
+        {
+          "id": "0",
+          "title": {
+            "en": "Mode 1"
+          }
+        },
+        {
+          "id": "1",
+          "title": {
+            "en": "Mode 2"
+          }
+        },
+        {
+          "id": "2",
+          "title": {
+            "en": "Mode 3"
+          }
+        },
+        {
+          "id": "3",
+          "title": {
+            "en": "Mode 4"
+          }
+        }
+      ]
+    },
+    "mode_btn": {
+      "title": {
+        "en": "Mode"
+      },
+      "type": "boolean",
+      "uiComponent": "button",
+      "getable": false,
+      "setable": true,
+      "icon": "assets/icons/mode.svg"
+    },
+    "select_btn": {
+      "title": {
+        "en": "Select"
+      },
+      "type": "boolean",
+      "uiComponent": "button",
+      "getable": false,
+      "setable": true
+    },
+    "speed_btn": {
+      "title": {
+        "en": "Speed"
+      },
+      "type": "boolean",
+      "uiComponent": "button",
+      "getable": false,
+      "setable": true
+    },
+    "speed_down_btn": {
+      "title": {
+        "en": "Speed Down"
+      },
+      "type": "boolean",
+      "uiComponent": "button",
+      "getable": false,
+      "setable": true,
+      "icon": "assets/icons/arrow_down.svg"
+    },
+    "speed_up_btn": {
+      "title": {
+        "en": "Speed Up"
+      },
+      "type": "boolean",
+      "uiComponent": "button",
+      "getable": false,
+      "setable": true,
+      "icon": "assets/icons/arrow_up.svg"
+    },
+    "swing_btn": {
+      "title": {
+        "en": "Swing"
+      },
+      "type": "boolean",
+      "uiComponent": "button",
+      "getable": false,
+      "setable": true
+    },
+    "swing_mode1_btn": {
+      "title": {
+        "en": "Swing Mode 1"
+      },
+      "type": "boolean",
+      "uiComponent": "button",
+      "getable": false,
+      "setable": true,
+      "icon": "assets/icons/mode.svg"
+    },
+    "swing_mode2_btn": {
+      "title": {
+        "en": "Swing Mode 2"
+      },
+      "type": "boolean",
+      "uiComponent": "button",
+      "getable": false,
+      "setable": true,
+      "icon": "assets/icons/mode.svg"
+    }
+  }
+}
